@@ -1,14 +1,14 @@
-<div class="row">
-  <div class="col-xs-offset-3 col-xs-6">
-    <h1>Editing book</h1>
- <% if @book.errors.any? %>
-  <%= @book.errors.count %>errors prohibited this book from being saved:
+<div style="text-align:center;">
+  <h1>Editing book</h1>
+  <% if @book.errors.any? %>
+   <%= @book.errors.count %>errors prohibited this book from being saved:
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
  <% end %>
+
  <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
 
    <h4>title</h4>
@@ -21,5 +21,4 @@
    <%= link_to 'back', books_path %>
  <% end %>
 
-  <div class="col-xs-3"></div>
 </div>
