@@ -25,47 +25,63 @@
             <% if user_signed_in? %>
               <li class="nav-item">
                 <%= link_to books_path(current_user), class:"btn btn-link" do %>
+                <p><i class="fas fa-home"></i>
                 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+                <P>
                 <% end %>
               </li>
 
               <li class="nav-item">
                 <%= link_to users_path, class:"btn btn-link" do %>
+                <p><i class="fas fa-users"></i>
                 <span class="glyphicon glyphicon-user" aria-hidden="true"> Users</span>
+                </p>
                 <% end %>
               </li>
 
               <li class="nav-item">
                 <%= link_to books_path, class:"btn btn-link" do %>
+                <p><i class="fas fa-book"></i>
                 <span class="glyphicon glyphicon-book" aria-hidden="true"> Books</span>
+                </p>
                 <% end %>
               </li>
               <li class="nav-item">
                 <%= link_to destroy_user_session_path, method: :delete, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-log-out" aria-hidden="true"> Logout</span>
+                <p><i class="fas fa-sign-out-alt"></i>
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"> Log out</span>
+                </p>
                 <% end %>
               </li>
             <% else %>
               <li class="nav-item">
                 <%= link_to root_path, class:"btn btn-link" do %>
+                <p><i class="fas fa-home"></i>
                 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+                </p>
                 <% end %>
               </li>
 
               <li class="nav-item">
                 <%= link_to about_path, class:"btn btn-link" do %>
+                <p><i class="fas fa-link"></i>
                 <span class="glyphicon glyphicon-link" aria-hidden="true"> About</span>
+                </p>
                 <% end %>
               </li>
 
               <li class="nav-item">
                 <%= link_to new_user_registration_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-edit" aria-hidden="true"> sign up</span>
+                <p><i class="fas fa-user-plus"></i>
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"> Sign up</span>
+                </p>
                 <% end %>
               </li>
               <li class="nav-item">
                 <%= link_to new_user_session_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-log-in" aria-hidden="true"> login</span>
+                <p><i class="fas fa-sign-in-alt"></i>
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"> Log in</span>
+                </p>
                 <% end %>
               </li>
             <% end %>
@@ -73,11 +89,11 @@
         </div>
       </nav>
     </header>
-    
+
     <main>
       <div class="container px-5 px-sm-0">
         <div class="row">
-          
+
         </div>
       </div>
     </main>
