@@ -1,3 +1,9 @@
+<% if flash[:notice] %>
+    <p id="notice">
+      <%= flash[:notice] %>
+  　</p>
+<% end %>
+
 <h2>User info</h2>
 <%= form_with model: @User do |f| %>
   <label for="inputName">Name</label>

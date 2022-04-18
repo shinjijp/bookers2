@@ -1,16 +1,16 @@
 <%= form_for(book) do |f| %>
 
-  <div class="form-title row">
-    <%= f.label :Title %>
+  <div class="form-group">
+    <%= f.label :Title %><br>
     <%= f.text_field :title, class: "col-xs-12" %>
   </div>
 
-  <div class="form-body row">
-  	<%= f.label :Opinion %>
+  <div class="form-group">
+  	<%= f.label :Opinion %><br>
     <%= f.text_area :body, class: "col-xs-12" %>
   </div>
 
-  <div class="actions row">
+  <div class="form-group">
     <%= f.submit "Create Book", class: "btn btn-primary col-xs-12" %>
   </div>
 <% end %>
