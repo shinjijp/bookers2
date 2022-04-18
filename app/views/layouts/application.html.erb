@@ -24,7 +24,7 @@
           <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
               <li class="nav-item">
-                <%= link_to books_path(current_user), class:"btn btn-link" do %>
+                <%= link_to user_path(current_user), class:"btn btn-link" do %>
                 <p><i class="fas fa-home"></i>
                 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
                 <P>
